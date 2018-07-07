@@ -1,6 +1,5 @@
 class Board
-  attr_accessor :grid
-  attr_reader :rows_count, :cells_count
+  attr_reader :rows_count, :cells_count, :grid
 
   def initialize(rows_count, cells_count)
     @rows_count = rows_count

@@ -10,7 +10,7 @@ Ref: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 #### Usage
 
-- `./bin/life`
+- `./bin/game`
 
 #### Tests
 
@@ -22,6 +22,19 @@ Ref: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 - accepts grid object
 - iterates over each cell and formats them depending on cell's state
+
+##### class: GameOfLife
+
+- creates initial `Board`
+- ticks `Board` instance every 0.5s
+- loops until instance has alive cells
+
+##### class: Board
+
+- aware of its width and height
+- composes `Cell` objects
+- replaces entire grid on tick
+- formats board (via dependency injection - formatter)
 
 ##### class: Cell
 

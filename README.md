@@ -18,6 +18,11 @@ Ref: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 #### Design
 
+##### class: BoardPresenter
+
+- accepts grid object
+- iterates over each cell and formats them depending on cell's state
+
 ##### class: Cell
 
 - aware of its location(x, y)

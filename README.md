@@ -1,43 +1,25 @@
-# GameOfLife
+## Game of Life
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/game_of_life`. To experiment with that code, run `bin/console` for an interactive prompt.
+Ref: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
-TODO: Delete this and the text above, and describe your gem
+#### Pre-requirements:
 
-## Installation
+- install Ruby `2.5.1`
+- install `bundler`
+- run `./bin/setup`
 
-Add this line to your application's Gemfile:
+#### Usage
 
-```ruby
-gem 'game_of_life'
-```
+- `./bin/life`
 
-And then execute:
+#### Tests
 
-    $ bundle
+- `rspec spec/`
 
-Or install it yourself as:
+#### Design
 
-    $ gem install game_of_life
+##### class: Cell
 
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/game_of_life. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the GameOfLife project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/game_of_life/blob/master/CODE_OF_CONDUCT.md).
+- aware of its location(x, y)
+- its `state` is immutable
+- returns new instance based of its own state and neighbours

@@ -1,5 +1,6 @@
-## Game of Life
+## Game of Life [![Build Status](https://travis-ci.org/blazejhadzik/game_of_life.svg?branch=master)](https://travis-ci.org/blazejhadzik/game_of_life)
 
+![Screenshot](screenshot.png)
 Ref: https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 #### Pre-requirements:

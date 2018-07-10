@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 
 require "bundler/setup"
+require "cli"
 require "game_of_life"
 
-GameOfLife.start
+GameOfLife.start(
+  Cli.parse
+)

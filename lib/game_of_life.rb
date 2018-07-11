@@ -6,11 +6,9 @@ require 'game_of_life/board_presenter'
 
 module GameOfLife
   TICK_PERIOD = 0.5
-  ROWS_COUNT = 40
-  COLUMN_COUNT = 80
 
-  def self.start
-    board = Board.new(ROWS_COUNT, COLUMN_COUNT)
+  def self.start(configuration)
+    board = Board.new(configuration.rows, configuration.columns)
 
     while board.alive?
       system 'clear'
